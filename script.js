@@ -26,11 +26,11 @@ d3.csv('driving.csv', d3.autoType)
 
         const xAxis = d3.axisBottom()
             .scale(xScale)
-            .ticks(10, "s")
+            .ticks(10, ",f")
 
         const yAxis = d3.axisLeft()
             .scale(yScale)
-            .ticks(10, "s")
+            .ticks(10, "$.2f")
             
         // Draw the axis
         svg.append("g")
@@ -192,11 +192,11 @@ function build(){
 
         const xAxis = d3.axisBottom()
             .scale(xScale)
-            .ticks(10, "s")
+            .ticks(10, ",f")
 
         const yAxis = d3.axisLeft()
             .scale(yScale)
-            .ticks(10, "s")
+            .ticks(10, "$0.2f")
             
         // Draw the axis
         svg.append("g")
